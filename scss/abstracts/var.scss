@@ -1,0 +1,29 @@
+$Poppins: 'Poppins', sans-serif;
+$DMSans: 'DM Sans', sans-serif;
+$black: #171718;
+$black-border: #26292D;
+$white: #fff;
+$purple: #5C62EC;
+
+//container 
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+html,body{
+    height: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main{
+    flex-grow: 1;
+}
+
+

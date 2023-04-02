@@ -1,0 +1,24 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./scss/main.scss ./scss/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MBalinsky/cv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MBalinsky/cv/issues"
+  },
+  "homepage": "https://github.com/MBalinsky/cv#readme",
+  "dependencies": {
+    "sass": "^1.60.0"
+  }
+}

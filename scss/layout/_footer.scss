@@ -1,0 +1,39 @@
+.footer {
+    background-color: $black;
+    padding: 60px 0 50px;
+    color: $white;
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 27px;
+    }
+
+    .social {
+        display: flex;
+        column-gap: 30px;
+        align-items: center;
+    }
+
+    .social__item {
+        & img {
+            width: 38px;
+        }
+    }
+
+    .social__item-link {
+        transition: .4s ease-in;
+
+        @media(hover: hover) {
+           &:hover{
+            transition: .4s ease-in;
+            opacity: .7;
+           }
+        }
+    }
+
+    .copyright {
+        font-size: 16px;
+    }
+}
