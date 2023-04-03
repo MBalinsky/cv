@@ -44,6 +44,9 @@
         font-size: 16px;
         font-weight: 500;
         font-family: $Poppins;
+        @media(max-width: 775px){
+            display: none;
+        }
     }
 
     .nav-list__link {

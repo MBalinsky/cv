@@ -1,12 +1,20 @@
 .section {
     padding: 70px 0;
+    @media(max-width: 775px){
+        padding: 35px 0;
+    }
     .section-title {
-        margin-bottom: 60px;
+        font-family: $DMSans;
+        margin-bottom: 40px;
         font-size: 60px;
         line-height: 1.3;
         color: $purple;
         text-align: center;
         font-weight: 700;
+        @media(max-width: 775px){
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
     }
     .projects {
         display: flex;
@@ -38,5 +46,8 @@
         font-size: 24px;
         line-height: 1.3;
         color: $black;
+        @media(max-width: 775px){
+            font-size: 22px;
+        }
     }
 }

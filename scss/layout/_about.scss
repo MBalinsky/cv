@@ -1,0 +1,12 @@
+.about{
+     & p {
+            text-align: justify;
+    }
+    & p span a{
+        color: $purple;
+        font-weight: 700;
+    }
+    & p span a:active{
+        opacity: 0.8;
+    }
+}

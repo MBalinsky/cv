@@ -26,4 +26,29 @@ main{
     flex-grow: 1;
 }
 
-
+//
+.information__btn{
+    font-family: $DMSans;
+    display: inline-block;
+    min-height: 48px;
+    padding: 12px 28px;
+    border-radius: 5px;
+    color: $white;
+    background-color: $purple;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: normal;
+    transition: .4s ease-in;
+    @media(hover: hover){
+        &:hover{
+            opacity: .7;
+            transition: .4s ease-in;
+        }
+    }
+    &:active{
+        color: $purple;
+        background-color: $white;
+        transition: .4s ease-in;
+        opacity: 1;
+    }
+}

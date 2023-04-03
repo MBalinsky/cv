@@ -17,6 +17,9 @@ html,body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    @media(max-width: 775px){
+        min-height: 450px;
+    }
     .header-wrapper {
         padding: 0 15px;
         max-width: 700px;
@@ -25,9 +28,15 @@ html,body{
         font-size: 40px;
         font-weight: 700;
         line-height: 1.4;
+        @media(max-width: 775px){
+            font-size: 30px;
+        }
         & strong{
             font-size: 60px;
             font-weight: 700;
+            @media(max-width: 775px){
+                font-size: 40px;
+            }
         }
         & em {
             font-style: normal;
@@ -42,30 +51,8 @@ html,body{
         & p + p {
             margin-top: 1em;
         }
-    }
-    .header__btn{
-        font-family: $DMSans;
-        display: inline-block;
-        min-height: 48px;
-        padding: 12px 28px;
-        border-radius: 5px;
-        color: $white;
-        background-color: $purple;
-        font-size: 16px;
-        font-weight: 500;
-        letter-spacing: normal;
-        transition: .4s ease-in;
-        @media(hover: hover){
-            &:hover{
-                opacity: .7;
-                transition: .4s ease-in;
-            }
-        }
-        &:active{
-            color: $purple;
-            background-color: $white;
-            transition: .4s ease-in;
-            opacity: 1;
+        @media(max-width: 775px){
+            font-size: 15px;
         }
     }
 }
