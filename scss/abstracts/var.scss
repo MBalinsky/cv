@@ -4,6 +4,8 @@ $black: #171718;
 $black-border: #26292D;
 $white: #fff;
 $purple: #5C62EC;
+$page-bg: $white;
+$text-color: $black;
 
 //container 
 .container{
@@ -12,8 +14,37 @@ $purple: #5C62EC;
     margin: 0 auto;
 }
 
-html,body{
+html,
+body{
     height: 100%;
+}
+
+body{
+    background-color: $page-bg;
+    color: $text-color;
+    transition: .2s ease-in;
+}
+
+.dark{
+     background-color: $black;
+     color: $white;
+     .section{
+        .project-title{
+            color: $white;
+         }
+        .project{
+            background-color: #29293a;
+            & img {
+                background-color: inherit;
+            }
+        }
+     }
+     main{
+        background-image: url('../img/header-abstract.png');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+     }
 }
 
 .wrapper{
@@ -24,6 +55,7 @@ html,body{
 
 main{
     flex-grow: 1;
+    border-bottom: 3px solid #26292D;;
 }
 
 //
@@ -51,4 +83,41 @@ main{
         transition: .4s ease-in;
         opacity: 1;
     }
+}
+
+.dark-mode-btn {
+    width: 51px;
+    height: 26px;
+    cursor: pointer;
+    background-color: #272727;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: 24px;
+        height: 24px;
+        background-color: $white;
+        border-radius: 50%;
+        transition: left .4s ease-in;
+        display: block;
+    }
+    .dark-mode-btn__icon {
+        position: relative;
+    }
+}
+
+.dark-mode-btn--active::before{
+    left: 26px;
+}
+
+.dark{
+    $page-bg: $black;
+    $text-color: $white;
 }
