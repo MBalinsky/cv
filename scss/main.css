@@ -136,6 +136,9 @@ body {
   background-size: auto;
   background-position: center;
 }
+.dark .about .about-img {
+  filter: invert(1);
+}
 
 .wrapper {
   display: flex;

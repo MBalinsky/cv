@@ -45,8 +45,12 @@ body{
         background-size: auto;
         background-position: center;
      }
+     .about{
+        .about-img{
+            filter: invert(1);
+        }
+     }
 }
-
 .wrapper{
     display: flex;
     flex-direction: column;
